@@ -32,8 +32,7 @@ export default class App extends Component {
     const userSession = new UserSession({appConfig: appConfig})
     const authRequest = makeAuthRequest(undefined, undefined, undefined, scopes, undefined, undefined, {
       solicitGaiaHubUrl: true,
-      recommendedGaiaHubUrl: 'https://gaia.test-blockstack.com'
-      // recommendedGaiaHubUrl: 'https://develop-hub.blockstack.org'
+      recommendedGaiaHubUrl: 'https://develop-hub.blockstack.org'
     })
 
     userSession.redirectToSignInWithAuthRequest(authRequest)
