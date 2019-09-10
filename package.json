@@ -1,7 +1,7 @@
 {
-  "name": "hello-blockstack",
-  "version": "0.0.0",
-  "description": "A simple Blockstack app using ReactJS",
+  "name": "Blockstack Contacts Manager",
+  "version": "0.1.0",
+  "description": "A demo app for Blockstack collections",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/blockstack/hello-blockstack.git"
@@ -12,7 +12,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "blockstack": "^19.2.5",
+    "blockstack": "^19.3.0",
+    "blockstack-collection-schemas": "^0.1.0",
     "qs": "^6.8.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
