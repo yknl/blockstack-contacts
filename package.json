@@ -12,8 +12,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "blockstack": "^19.3.0",
-    "blockstack-collection-schemas": "^0.1.0",
+    "blockstack": "20.0.0-alpha.2",
+    "blockstack-collections": "0.1.5",
     "qs": "^6.8.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

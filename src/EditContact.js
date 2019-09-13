@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Contact } from 'blockstack-collection-schemas'
+import { Contact } from 'blockstack-collections'
 import { InputGroup, Input } from './components/Input'
 import { Link, withRouter } from 'react-router-dom'
 import qs from 'qs'
@@ -150,10 +150,9 @@ class EditContact extends Component {
     }
 
     var contact = new Contact(newContact)
-    contact.save()
-      .then(() => {
-        this.props.history.push('/')
-      })
+    contact.save().then(() => {
+      this.props.history.push('/')
+    })
   }
 
   saveContact = () => {

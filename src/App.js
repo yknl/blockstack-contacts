@@ -9,7 +9,7 @@ import {
 } from 'blockstack';
 import {
   Contact
-} from 'blockstack-collection-schemas'
+} from 'blockstack-collections'
 import {
   Switch,
   Route

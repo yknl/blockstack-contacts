@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
   Contact
-} from 'blockstack-collection-schemas'
+} from 'blockstack-collections'
 import { Link } from 'react-router-dom'
 
 export default class ListContacts extends Component {
