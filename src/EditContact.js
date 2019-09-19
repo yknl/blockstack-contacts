@@ -122,15 +122,18 @@ class EditContact extends Component {
       })
 
       if (this.state.new) {
-        return this.checkExisting(this.state.contact.identifier)
+        const newContact = this.createNewContact()
+        return this.checkExisting(newContact.constructIdentifier())
         .then((contactExists) => {
           if (contactExists) {
             this.setState({
-              errors: {contactExists: `Contact "${this.state.name}" already exists, cannot overwrite.`},
+              errors: {contactExists: `Contact "${this.state.firstName} ${this.state.lastName}" already exists, cannot overwrite.`},
               saving: false
             })
           } else {
-            return this.createNewContact()
+            return newContact.save().then(() => {
+              this.props.history.push('/')
+            })
           }
         })
       } else {
@@ -150,9 +153,7 @@ class EditContact extends Component {
     }
 
     var contact = new Contact(newContact)
-    contact.save().then(() => {
-      this.props.history.push('/')
-    })
+    return contact
   }
 
   saveContact = () => {
