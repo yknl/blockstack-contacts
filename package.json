@@ -14,7 +14,7 @@
   "dependencies": {
     "blockstack": "20.0.0-alpha.4",
     "blockstack-collections": "0.1.8",
-    "qs": "^6.8.0",
+    "qs": "^6.8.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-icons": "^3.7.0",
